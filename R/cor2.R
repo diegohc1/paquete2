@@ -15,4 +15,4 @@ cor2 <- function(data, round = 2){
 }
 
 
-
+rm(cor2)
