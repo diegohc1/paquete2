@@ -1,13 +1,13 @@
 
-#' tabla freq
+#' Tabla de frecuencias (Frequency table)
 #'
-#' Lo mismo que table() pero devuelve un dataframe y acepta pesos
+#' Lo mismo que table() pero devuelve un data frame y acepta pesos (Same as table() but returns a dataframe and accepts weights)
 #'
-#' @param data Dataframe
-#' @param x Variable categórica
-#' @param peso En caso hayan pesos
+#' @param data data frame
+#' @param x variable categórica (categorical variable)
+#' @param peso en caso hayan pesos (if there are weights)
 #'
-#' @return Dataframe
+#' @return data frame con la cantidad de casos (n) y porcentaje (prop)
 #' @export
 #'
 #' @examples

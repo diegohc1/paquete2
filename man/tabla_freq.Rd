@@ -2,22 +2,22 @@
 % Please edit documentation in R/tabla_freq.R
 \name{tabla_freq}
 \alias{tabla_freq}
-\title{tabla freq}
+\title{Tabla de frecuencias (Frequency table)}
 \usage{
 tabla_freq(data, x, peso = NULL)
 }
 \arguments{
-\item{data}{Dataframe}
+\item{data}{data frame}
 
-\item{x}{Variable categórica}
+\item{x}{variable categórica (categorical variable)}
 
-\item{peso}{En caso hayan pesos}
+\item{peso}{en caso hayan pesos (if there are weights)}
 }
 \value{
-Dataframe
+data frame con la cantidad de casos (n) y porcentaje (prop)
 }
 \description{
-Lo mismo que table() pero devuelve un dataframe y acepta pesos
+Lo mismo que table() pero devuelve un data frame y acepta pesos (Same as table() but returns a dataframe and accepts weights)
 }
 \examples{
 tabla_freq(mtcars, "gear")

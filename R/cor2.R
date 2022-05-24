@@ -1,10 +1,10 @@
 
 #' Correlaciones pairwise
 #'
-#' @param data Dataframe con los variables a correlacionar
-#' @param round Redondear, por default = 2
+#' @param data data frame
+#' @param round redondear, por default 2 decimales (round, by default 2 digits)
 #'
-#' @return Matriz de correlaciones
+#' @return matriz de correlaciones (matrix correlations)
 #' @export
 #'
 #' @examples

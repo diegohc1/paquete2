@@ -7,12 +7,12 @@
 cor2(data, round = 2)
 }
 \arguments{
-\item{data}{Dataframe con los variables a correlacionar}
+\item{data}{data frame}
 
-\item{round}{Redondear, por default = 2}
+\item{round}{redondear, por default 2 decimales (round, by default 2 digits)}
 }
 \value{
-Matriz de correlaciones
+matriz de correlaciones (matrix correlations)
 }
 \description{
 Correlaciones pairwise
