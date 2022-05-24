@@ -1,11 +1,10 @@
 Package: paquete2
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Funciones útiles para la elaboración de reportes y otros análisis 
 Version: 0.1.0
-Author: Who wrote it
+Author: Diego Hermoza
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Disminuir la tension de los especialistas cuando elaboran un número intederminado de gráficos/tablas/regresiones
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
