@@ -5,7 +5,7 @@
 #'
 #' @param data Dataframe
 #' @param x Variable categórica
-#' @param peso En caso pesos
+#' @param peso En caso hayan pesos
 #'
 #' @return Dataframe
 #' @export
