@@ -15,14 +15,24 @@
 #'
 #'
 
-tabla_freq <- function(data, x, peso = NULL){
+tabla_freq <- function(data, x, peso = NULL, na = NULL){
+
+  data[[x]] <- ifelse(is.na(data[[x]]), "NA", data[[x]]) # para que lo tome en cuenta en aggregate
 
   if(!is.null(peso)){
-    f <- paste0(peso, "~", x)
-    df1 <- aggregate(formula = as.formula(f), data = data, FUN = sum)
-    names(df1)[names(df1) == peso] <- "Freq"
+
+    if(!sum(is.na(data[[peso]])) == 0) stop("La variable de pesos tiene missing")
+
+    v <- tapply(data[[peso]], data[[x]], sum, simplify = TRUE)
+    df1 <- data.frame(Var1 = names(v), Freq = v)
+    rownames(df1) <- NULL
+
   }else{
     df1 <- as.data.frame(table(data[x]))
+  }
+
+  if(is.null(na)){ #consideramos NA?
+    df1 <- df1[which(df1[["Var1"]] != "NA"), ]
   }
 
   df2 <- within(df1, {prop = round(prop.table(Freq)*100, 1)})
