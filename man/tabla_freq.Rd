@@ -4,7 +4,7 @@
 \alias{tabla_freq}
 \title{Tabla de frecuencias (Frequency table)}
 \usage{
-tabla_freq(data, x, peso = NULL)
+tabla_freq(data, x, peso = NULL, na = NULL)
 }
 \arguments{
 \item{data}{data frame}
@@ -12,6 +12,8 @@ tabla_freq(data, x, peso = NULL)
 \item{x}{variable categórica (categorical variable)}
 
 \item{peso}{en caso hayan pesos (if there are weights)}
+
+\item{na}{en caso se consideren valores perdidos ()}
 }
 \value{
 data frame con la cantidad de casos (n) y porcentaje (prop)

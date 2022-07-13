@@ -6,6 +6,7 @@
 #' @param data data frame
 #' @param x variable categórica (categorical variable)
 #' @param peso en caso hayan pesos (if there are weights)
+#' @param na en caso se consideren valores perdidos ()
 #'
 #' @return data frame con la cantidad de casos (n) y porcentaje (prop)
 #' @export
