@@ -25,8 +25,7 @@ tabla_freq_estrato <- function(data, var, grupo, peso = NULL, compara = NULL, na
   }
 
   df2 <- lapply(split(data, data[["group_temp"]]), function(x) tabla_freq(x, var, peso = peso, na = na))
-  #df3 <- pega_lista(df2, "estrato")
-  df3 <- dplyr::bind_rows(df2, .id = "estrato")
+  df3 <- pega_lista(df2, "estrato")
 
   if(length(grupo) == 1){
     names(df3)[names(df3) == 'estrato'] <- grupo

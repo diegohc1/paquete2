@@ -14,7 +14,6 @@
 #' @examples
 #' tabla_freq_columnas(iris, "Sepal", starts = TRUE)
 #'
-#'
 tabla_freq_columnas <- function(data, nomvar, peso = NULL, starts = NULL, na = NULL){
 
   if(!is.null(starts)){

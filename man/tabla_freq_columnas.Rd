@@ -26,5 +26,4 @@ Aplica [tabla_freq()] a varias columnas
 \examples{
 tabla_freq_columnas(iris, "Sepal", starts = TRUE)
 
-
 }
