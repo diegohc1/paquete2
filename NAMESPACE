@@ -3,3 +3,5 @@
 export(cor2)
 export(pega_lista)
 export(tabla_freq)
+export(tabla_freq_columnas)
+export(tabla_freq_estrato)
